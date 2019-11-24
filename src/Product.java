@@ -1,10 +1,11 @@
 
 public class Product {
 
-	public String name;
-	public double price;
-	public int quantity;
-
+	private String name;
+	private double price;
+	private int quantity;
+	private Estoque estoque;
+	
 	public double totalValueInStock() {
 		return price * quantity;
 
@@ -32,6 +33,16 @@ public class Product {
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+	
+	
+
+	public Estoque getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(Estoque estoque) {
+		this.estoque = estoque;
 	}
 
 	@Override
